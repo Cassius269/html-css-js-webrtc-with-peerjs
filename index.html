@@ -1,0 +1,45 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+</head>
+<body>
+    <h1>test</h1>
+    <video autoplay></video>
+    <script src="./script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeerJS Video Call</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+</head>
+<body>
+    <h1>PeerJS Video Call</h1>
+    
+    <p><strong>Mon ID PeerJS :</strong> <span id="peer-id">En attente...</span></p>
+    <form action="">
+        <label for="remote-id">ID du correspondant :</label>
+        <input type="text" id="remote-id">
+        <button onclick="connectToPeer()">Se connecter</button>
+    </form>
+    <h2>Vidéo locale</h2>
+    <video id="localVideo" autoplay muted></video>
+
+    <h2>Vidéo distante</h2>
+    <video id="remoteVideo" autoplay></video>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
